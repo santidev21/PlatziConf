@@ -5,3 +5,43 @@ a{
     text-decoration: none;
     color:#fff;
 }
+nav img{
+    width: 80px;
+}
+.text-platzi{
+    color: #97c93e !important;
+}
+main .carousel-inner img{
+    height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+main .carousel{
+    position: relative;
+}
+main .carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: white;
+}
+main .carousel .overlay .container,
+main .carousel .overlay .row{
+    height: 100%;
+}
+.btn-platzi{
+    background-color: #97c93e;
+    color: white;
+}
+.btn-platzi:hover{
+    background-color: #5e7c29;
+}
+#place-time{
+    background-color: #343a40;
+}
+#place-time img{
+    max-width: 100%;
+}

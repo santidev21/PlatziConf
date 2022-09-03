@@ -8,43 +8,197 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/platzi-logo.png" alt="Logo platzi"> Conf Hawaii
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Conference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Orators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Date info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Become an orator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-platzi" href="#">Buy ticket</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav>   
     <div class="container">
     </div>
+    <!-- /navbar -->
+    
+    <!-- main -->
+    <main>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“false”>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/hawaii.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/hawaii2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/hawaii3.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="overlay">
+            <div class="container">
+              <div class="row align-content-center">
+                <div class="col-md-6 offset-md-6 text-md-end text-center">
+                  <h1>Platzi Conf Hawaii</h1>
+                  <p class="d-none d-md-block">Platzi Conf arrives for the first time in Hawaii! An event to share with our 
+                    community the knowledge and experience of the experts who are creating the future 
+                    of the internet. Come meet team platzi members, other students, and the orators.</p>
+                    <a href="#" class="btn btn-outline-ligth">Become an orator</a>
+                    <button type="button" class="btn btn-platzi">Buy ticket</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <!-- /main -->
+
+        <!-- Speakers -->
+    <section id="speakers">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Meet the</small>
+            <h2>Orators</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="./assets/speakers/sacha.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                </div>
+                <h5 class="card-title">Sacha Lifszyc</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Saepe voluptate voluptatibus quis reiciendis doloribus porro dolorum repellendus ad tempore illo animi laudantium, eaque dicta laboriosam aperiam quibusdam at nobis velit minus alias voluptatum temporibus! Ipsum laudantium amet autems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="./assets/speakers/leonidas.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                </div>
+                <h5 class="card-title">Leonidas Esteban</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Saepe voluptate voluptatibus quis reiciendis doloribus porro dolorum repellendus ad tempore illo animi laudantium, eaque dicta laboriosam aperiam quibusdam at nobis velit minus alias voluptatum temporibus! Ipsum laudantium amet autems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="./assets/speakers/freddy.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">Git</span>
+                </div>
+                <h5 class="card-title">Freddy Vega</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Saepe voluptate voluptatibus quis reiciendis doloribus porro dolorum repellendus ad tempore illo animi laudantium, eaque dicta laboriosam aperiam quibusdam at nobis velit minus alias voluptatum temporibus! Ipsum laudantium amet autems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="./assets/speakers/cvander.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span class="badge text-bg-info">React</span>
+                </div>
+                <h5 class="card-title">Christian Van Der H</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Saepe voluptate voluptatibus quis reiciendis doloribus porro dolorum repellendus ad tempore illo animi laudantium, eaque dicta laboriosam aperiam quibusdam at nobis velit minus alias voluptatum temporibus! Ipsum laudantium amet autems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- /Speakers -->
+    
+    <!-- Date -->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pe-0 ps-0">
+            <img src="./assets/images/honolulu.jpg" alt="Honolulu city">
+          </div>
+          <div class="col-12 col-lg-6 pt-2 text-light">
+            <h2>Honolulu - October 2023</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo cumque magnam labore dignissimos culpa deleniti minima harum eius obcaecati ea explicabo sed inventore velit, aut vel? Rem tempora totam eveniet odio vero soluta, et corrupti tenetur iusto labore. Possimus cupiditate ratione sapiente distinctio eos, sint molestias, aut saepe mollitia, nulla dolorum odit? Aliquam aut hic ea, optio vero at reprehenderit, autem enim earum nam veniam libero deleniti sequi dolores repellat voluptate! Ex ab at fugiat impedit, quam iure. Nemo quae dolor illo magnam recusandae quis, deleniti praesentium eius maxime dolorem distinctio ullam, doloribus est inventore sint vel eligendi ab!</p>
+            <a href="https://en.wikipedia.org/wiki/Honolulu" target="_blank" class="btn btn-outline-light mb-4">More info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Date -->
+    
+    <!-- become orator -->
+    <section id="become-orator pt-2 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Become an</small>
+            <h2>Orator</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Sign up as a speaker to give an <abbr title="5 minutes talks"  data-bs-toggle="tooltip">ignite</abbr> talk. Tell us what you want to talk about!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2 pb-2">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+            <div class="row pt-2">
+              <div class="col-12">
+                <textarea	name="text" class="form-control form-control-lg" placeholder="Tell us what you want to talk about"></textarea>
+              </div>
+            </div>
+            <div class="row pt-2">
+              <div class="col-12 d-grid">
+                <button class="btn btn-platzi">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- become orator -->
+
+    <!-- footer -->
     <footer id="footer" class="pb-3 pt-4">
         <div class="container">
             <div class="row text-center">
@@ -61,5 +215,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
   </body>
+</body>
 </html>
